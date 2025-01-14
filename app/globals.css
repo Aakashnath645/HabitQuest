@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'PixelFont';
+  src: url('/fonts/PressStart2P-Regular.ttf') format('truetype');
+}
+
+:root {
+  --background: 0 0% 0%;
+  --foreground: 0 0% 100%;
+  --primary: 60 100% 50%;
+  --primary-foreground: 0 0% 0%;
+}
+
+.font-pixel {
+  font-family: 'PixelFont', monospace;
+}
+
+.pixel-box {
+  box-shadow: 0 0 0 2px #fff;
+  image-rendering: pixelated;
+}
+
+@layer base {
+  body {
+    @apply bg-black text-white font-pixel;
+  }
+}
+
+@layer components {
+  .btn-8bit {
+    @apply px-4 py-2 bg-yellow-400 text-black font-bold uppercase pixel-box transition-all duration-100 hover:bg-yellow-300 active:translate-y-1;
+  }
+}
+
