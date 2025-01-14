@@ -12,7 +12,7 @@ HabitQuest is a gamified habit-tracking web application that helps users build a
 
 ## Tech Stack
 
-- **Frontend**: React with Next.js (App Router)
+- **Frontend**: TypeScript (App Router)
 - **Styling**: Tailwind CSS with custom pixel art theme
 - **AI Integration**: Custom AI implementation using Vercel AI SDK
 - **State Management**: React Hooks (useState)
